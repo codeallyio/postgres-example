@@ -62,7 +62,7 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "nodemon ./src",
+    "start": "yarn start-posgres && nodemon ./src",
     "start-debug": "nodemon --inspect ./src",
     "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "fix": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" --fix .",
@@ -83,6 +83,7 @@
     "db-reset-prod": "yarn db-rollback --env=prod && yarn db-migrate --env=prod && yarn db-restore --env=prod",
     "psql": "babel-node -x .ts ./scripts/psql",
     "deploy-test": "gcloud --project=example-test functions deploy api --region=us-central1 --allow-unauthenticated --entry-point=api --memory=2048MB --runtime=nodejs10 --trigger-http --source=.",
-    "deploy-prod": "gcloud --project=example-prod functions deploy api --region=us-central1 --allow-unauthenticated --entry-point=api --memory=2048MB --runtime=nodejs10 --trigger-http --source=."
+    "deploy-prod": "gcloud --project=example-prod functions deploy api --region=us-central1 --allow-unauthenticated --entry-point=api --memory=2048MB --runtime=nodejs10 --trigger-http --source=.",
+    "start-posgres": "sudo service postgresql start"
   }
 }
