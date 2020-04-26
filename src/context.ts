@@ -48,13 +48,13 @@ export class Context {
    * ------------------------------------------------------------------------ */
 
   ensureAuthorized(check: (user: any) => Boolean) {
-    if (!this.user) {
-      throw new UnauthorizedError();
-    }
+    // if (!this.user) {
+    //   throw new UnauthorizedError();
+    // }
 
-    if (check && !check(this.user)) {
-      throw new ForbiddenError();
-    }
+    // if (check && !check(this.user)) {
+    //   throw new ForbiddenError();
+    // }
   }
 
   /*
