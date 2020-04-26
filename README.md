@@ -2,7 +2,7 @@
 
 First start
 ```bash
-yarn && yarn db-init && yarn start
+yarn && yarn init-db && yarn start
 ```
 
 Any other start
