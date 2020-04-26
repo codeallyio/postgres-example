@@ -84,7 +84,7 @@
     "psql": "babel-node -x .ts ./scripts/psql",
     "deploy-test": "gcloud --project=example-test functions deploy api --region=us-central1 --allow-unauthenticated --entry-point=api --memory=2048MB --runtime=nodejs10 --trigger-http --source=.",
     "deploy-prod": "gcloud --project=example-prod functions deploy api --region=us-central1 --allow-unauthenticated --entry-point=api --memory=2048MB --runtime=nodejs10 --trigger-http --source=.",
-    "init-db": "yarn start-posgres && yarn set-password",
+    "init-db": "yarn start-posgres && yarn set-password && yarn db-migrate && yarn db-seed",
     "start-posgres": "sudo service postgresql start",
     "set-password": "sudo -u postgres psql -c \"ALTER USER postgres PASSWORD 'postgres';\""
   }
