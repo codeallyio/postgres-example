@@ -68,3 +68,16 @@ $ yarn deploy-prod              # Deploy the app to PROD environment
 
 For more information refer to the [Deployment](https://github.com/kriasoft/nodejs-api-starter/wiki/deployment)
 guide in the project's Wiki.
+
+### Queries to test
+```graphql
+{
+  users {
+    edges {
+      node {
+        username
+      }
+    }
+  }
+}
+```
