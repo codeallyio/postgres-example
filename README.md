@@ -1,12 +1,15 @@
 ## Getting Started
 
-Just clone the repo, tweak `.env` file in the root of the project, and run `yarn start`:
-
+First start
 ```bash
-yarn
-yarn db-init
+yarn && yarn db-init && yarn start
+```
+
+Any other start
+```bash
 yarn start
 ```
+
 
 ### Queries to test
 ```graphql
