@@ -1,3 +1,8 @@
 {
-  "init": "cd postgres-example && yarn && yarn init-db && yarn start"
+  "init": "cd postgres-example && yarn && yarn init-db && yarn start",
+  "envVariables": [
+    ["CODEROAD_DISABLE_RUN_ON_SAVE", "true"],
+    ["CODEROAD_DISPLAY_RUN_TEST_BUTTON", "true"],
+    ["CODEROAD_TUTORIAL_URL", "https://raw.githubusercontent.com/coderoad/fcc-learn-npm/master/coderoad-config.json"]
+  ]
 }
