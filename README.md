@@ -12,6 +12,11 @@ yarn && yarn init-db && yarn start
 yarn start
 ```
 
+### If you want to access postgres directly
+```bash
+sudo -u postgres psql
+```
+
 #### Example GraphQL query
 ```graphql
 {
