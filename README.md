@@ -12,7 +12,7 @@ yarn && yarn init-db && yarn start
 yarn start
 ```
 
-### If you want to access postgres directly
+### If you want to access PostgreSQL directly
 ```bash
 sudo -u postgres psql
 ```
