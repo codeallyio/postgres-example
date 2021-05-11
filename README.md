@@ -1,17 +1,18 @@
+# This is an example SQL + Javascript + GraphQL interview playground
+
 ## Getting Started
 
-First start
+#### Initial sever start
 ```bash
 yarn && yarn init-db && yarn start
 ```
 
-Any other start
+#### If you want to start a server again
 ```bash
 yarn start
 ```
 
-
-### Queries to test
+#### Example GraphQL query
 ```graphql
 {
   users {
